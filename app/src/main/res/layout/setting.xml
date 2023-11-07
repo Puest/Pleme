@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="#8CADCB">
+    <!--설정(머리말)-->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/bemin"
+        android:text="기본 설정"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--닉네임-->
+
+    <!--푸쉬 알람-->
+
+    <!--효과음-->
+
+    <!--푸쉬 설정 선-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/bemin"
+            android:text="닉네임"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bemin"
+            android:text="계림동 에이스"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/bemin"
+        android:showText="true"
+        android:text="푸시알람"
+        android:textOff="On"
+        android:textOn="OFF"
+        android:textSize="20dp"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_tr_selector"
+        app:layout_constraintBottom_toTopOf="@+id/switch2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/bemin"
+        android:showText="true"
+        android:text="효과음"
+        android:textOff="ON"
+        android:textOn="OFF"
+        android:textSize="20sp"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_tr_selector"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/bemin"
+        android:text="---------------푸쉬설정--------------"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ann1"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_style4"
+            android:fontFamily="@font/bemin"
+            android:text="공지사항"
+            app:layout_constraintBottom_toTopOf="@+id/hel"
+            app:layout_constraintEnd_toStartOf="@+id/ser"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ser"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/btn_style4"
+            android:fontFamily="@font/bemin"
+            android:text="고객센터"
+            app:layout_constraintBottom_toTopOf="@+id/inqu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hel"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_style4"
+            android:fontFamily="@font/bemin"
+            android:text="도움말"
+            app:layout_constraintBottom_toTopOf="@+id/log_out_btn"
+            app:layout_constraintEnd_toStartOf="@+id/inqu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/inqu"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_style4"
+            android:fontFamily="@font/bemin"
+            android:text="문의사항"
+            app:layout_constraintBottom_toTopOf="@+id/with_out"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/log_out_btn"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_style4"
+            android:fontFamily="@font/bemin"
+            android:text="사이트"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/with_out"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/with_out"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_style4"
+            android:fontFamily="@font/bemin"
+            android:text="회원탈퇴"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

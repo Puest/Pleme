@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--외곽을 위한 Stroke 만들기-->
+<resources>
+    <declare-styleable name="OutlineTextView">
+        <attr name="textStroke" format="boolean"/>         <!-- 외곽선 사용 유무 속성 -->
+        <attr name="textStrokeWidth" format="float"/>  <!-- 외곽선 두께 - dp 사용 위해 dimension -->
+        <attr name="textStrokeColor" format="color"/>      <!-- 외곽선 컬러 -->
+    </declare-styleable>
+</resources>

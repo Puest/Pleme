@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">pleme</string>
+    <string name="title_activity_main4">MainActivity4</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="upload_success">Upload Success</string>
+    <!-- Sign In -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin_email">회원가입 및 이메일 로그인</string>
+    <string name="signup_complete">회원가입 성공</string>
+    <string name="signin_complete">로그인 성공</string>
+    <string name="signout">로그아웃</string>
+    <string name="signout_success">로그아웃 성공</string>
+    <string name="signout_fail">로그아웃 실패</string>
+    <string name="signout_fail_null">이메일과 비밀번호를 입력해주세요</string>
+
+    <!-- Alarm -->
+    <string name="alarm_favorite">님이 좋아요를 눌렀습니다.</string>
+    <string name="alarm_who">님이&#160;</string>
+    <string name="alarm_comment">&#160;\" 라는 메세지를 남겼습니다.</string>
+    <string name="alarm_follow">님이 당신의 계정을 팔로워하기 시작했습니다.</string>
+    <string name="alarm_poke">님이 당신을 콕 찔렀습니다.</string>
+
+    <!-- Comment -->
+    <string name="send">보내기</string>
+
+    <!-- Account -->
+    <string name="post">게시물</string>
+    <string name="following">팔로잉</string>
+    <string name="follower">팔로워</string>
+    <string name="follow">팔로우</string>
+    <string name="follow_cancel">팔로우 취소</string>
+    <string name="profile">Profile</string>
+    <string name="count_0">0</string>
+    <string name="title_activity_comment">CommentActivity</string>
+</resources>

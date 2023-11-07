@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CADCB">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/itim"
+        android:text="leme"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="117dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/good2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="@font/bemin_1ttf"
+        android:gravity="center"
+        android:text="이미 가입된 아이디입니다.\n 다른 아이디로 만들어주시길 바랍니다."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <android.widget.Button
+        android:id="@+id/back_btn"
+        android:layout_width="329dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/btn_style2"
+        android:fontFamily="@font/bemin"
+        android:text="확인"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

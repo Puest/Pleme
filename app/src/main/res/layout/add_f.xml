@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#8CADCB">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/bemin"
+        android:gravity="center"
+        android:text="닉네임을 입력해주세요"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/serach_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/serach_txt"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_style3"
+        android:ems="10"
+        android:fontFamily="@font/bemin"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ch"
+        android:layout_width="261dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_style4"
+        android:fontFamily="@font/bemin_1ttf"
+        android:text="확인"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/can"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/can"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bemin_1ttf"
+        android:gravity="center"
+        android:text="취소"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+</androidx.constraintlayout.widget.ConstraintLayout>

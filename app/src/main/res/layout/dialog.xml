@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CADCB">
+
+    <ImageView
+        android:id="@+id/title_v1"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/leme"
+        app:layout_constraintBottom_toTopOf="@+id/me_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/me_1"
+        app:layout_constraintEnd_toStartOf="@+id/title_v1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pic" />
+
+    <TextView
+        android:id="@+id/me_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/bemin"
+        android:gravity="center"
+        android:text="Pleme에 가입했던 이메일을 입력해주세요.\n비밀번호 재설정 메일을 보내드립니다."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/id_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/id_text"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="@font/bemin"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/pw_reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/pw_reset"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_style2"
+        android:fontFamily="@font/bemin"
+        android:text="비밀번호 재설정"
+        app:layout_constraintBottom_toTopOf="@+id/dk_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dk_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:fontFamily="@font/bemin"
+        android:gravity="center"
+        android:text="이메일 또는 아이디를 잊으셨다면\n Pleme의 문의사항 번호로 전화주시길 바랍니다.\n\n"
+        android:textColor="#CBFFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

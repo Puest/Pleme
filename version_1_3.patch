@@ -1,0 +1,152 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 9982a91efe2f20b6e5c7a0784bbb6766e182e0fb)
++++ b/.idea/compiler.xml	(revision b6b5e1dc6636b07bdfbc5dcbf1d4a7186ab0ba70)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="CompilerConfiguration">
+-    <bytecodeTargetLevel target="11" />
++    <bytecodeTargetLevel target="17" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/kotlinc.xml
+===================================================================
+diff --git a/.idea/kotlinc.xml b/.idea/kotlinc.xml
+new file mode 100644
+--- /dev/null	(revision b6b5e1dc6636b07bdfbc5dcbf1d4a7186ab0ba70)
++++ b/.idea/kotlinc.xml	(revision b6b5e1dc6636b07bdfbc5dcbf1d4a7186ab0ba70)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="KotlinJpsPluginSettings">
++    <option name="version" value="1.8.20" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 9982a91efe2f20b6e5c7a0784bbb6766e182e0fb)
++++ b/.idea/misc.xml	(revision b6b5e1dc6636b07bdfbc5dcbf1d4a7186ab0ba70)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: app/src/main/res/drawable/btn_style4.xml
+===================================================================
+diff --git a/app/src/main/res/drawable/btn_style4.xml b/app/src/main/res/drawable/btn_style4.xml
+new file mode 100644
+--- /dev/null	(revision b6b5e1dc6636b07bdfbc5dcbf1d4a7186ab0ba70)
++++ b/app/src/main/res/drawable/btn_style4.xml	(revision b6b5e1dc6636b07bdfbc5dcbf1d4a7186ab0ba70)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
++    <corners
++        android:radius="62dp"
++        />
++    <solid
++        android:color="#DAF5FF"
++        />
++    <size
++        android:width="270dp"
++        android:height="60dp"
++
++        />
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/layout/add_f.xml
+===================================================================
+diff --git a/app/src/main/res/layout/add_f.xml b/app/src/main/res/layout/add_f.xml
+new file mode 100644
+--- /dev/null	(revision b6b5e1dc6636b07bdfbc5dcbf1d4a7186ab0ba70)
++++ b/app/src/main/res/layout/add_f.xml	(revision b6b5e1dc6636b07bdfbc5dcbf1d4a7186ab0ba70)
+@@ -0,0 +1,75 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".f_add"
++    android:background="#8CADCB">
++
++    <TextView
++        android:id="@+id/textView4"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="127dp"
++        android:layout_marginTop="83dp"
++        android:layout_marginEnd="127dp"
++        android:layout_marginBottom="33dp"
++        android:fontFamily="@font/bemin"
++        android:gravity="center"
++        android:text="닉네임을 입력해주세요"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toTopOf="@+id/serach_txt"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <EditText
++        android:id="@+id/serach_txt"
++        android:layout_width="261dp"
++        android:layout_height="42dp"
++        android:layout_marginStart="75dp"
++        android:layout_marginTop="33dp"
++        android:layout_marginEnd="75dp"
++        android:background="@drawable/btn_style3"
++        android:ems="10"
++        android:fontFamily="@font/bemin"
++        android:inputType="textPersonName"
++        android:paddingLeft="10dp"
++        android:paddingTop="8dp"
++        android:paddingBottom="8dp"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/textView4" />
++
++    <androidx.appcompat.widget.AppCompatButton
++        android:id="@+id/ch"
++        android:layout_width="261dp"
++        android:layout_height="40dp"
++        android:layout_marginStart="75dp"
++        android:layout_marginTop="21dp"
++        android:layout_marginEnd="75dp"
++        android:background="@drawable/btn_style4"
++        android:fontFamily="@font/bemin_1ttf"
++        android:text="확인"
++        android:textSize="20sp"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/serach_txt" />
++
++    <TextView
++        android:id="@+id/textView5"
++        android:layout_width="90dp"
++        android:layout_height="37dp"
++        android:layout_marginStart="160dp"
++        android:layout_marginTop="19dp"
++        android:layout_marginEnd="161dp"
++        android:fontFamily="@font/bemin_1ttf"
++        android:gravity="center"
++        android:text="취소"
++        android:textSize="20sp"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/ch" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
